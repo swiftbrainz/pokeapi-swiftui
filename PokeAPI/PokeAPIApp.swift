@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import PokeAPI_Lib
 
 @main
 struct PokeAPIApp: App {
+
     var body: some Scene {
         WindowGroup {
             ContentView()

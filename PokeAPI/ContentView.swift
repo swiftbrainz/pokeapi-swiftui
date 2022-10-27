@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import PokeAPI_Lib
 
 struct ContentView: View {
+    
+    let service: PokemonRestService = PokemonRestService()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
