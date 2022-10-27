@@ -14,6 +14,7 @@
 		5319F476290A67EE00D91DF5 /* PokeAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5319F475290A67EE00D91DF5 /* PokeAPITests.swift */; };
 		5319F480290A67EE00D91DF5 /* PokeAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5319F47F290A67EE00D91DF5 /* PokeAPIUITests.swift */; };
 		5319F482290A67EE00D91DF5 /* PokeAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5319F481290A67EE00D91DF5 /* PokeAPIUITestsLaunchTests.swift */; };
+		5319F491290A905800D91DF5 /* PokeAPI-Lib in Frameworks */ = {isa = PBXBuildFile; productRef = 5319F490290A905800D91DF5 /* PokeAPI-Lib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5319F491290A905800D91DF5 /* PokeAPI-Lib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,9 @@
 			dependencies = (
 			);
 			name = PokeAPI;
+			packageProductDependencies = (
+				5319F490290A905800D91DF5 /* PokeAPI-Lib */,
+			);
 			productName = PokeAPI;
 			productReference = 5319F460290A67ED00D91DF5 /* PokeAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +224,9 @@
 				Base,
 			);
 			mainGroup = 5319F457290A67ED00D91DF5;
+			packageReferences = (
+				5319F48F290A905800D91DF5 /* XCRemoteSwiftPackageReference "pokeapi-lib" */,
+			);
 			productRefGroup = 5319F461290A67ED00D91DF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -606,6 +614,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5319F48F290A905800D91DF5 /* XCRemoteSwiftPackageReference "pokeapi-lib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftbrainz/pokeapi-lib.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5319F490290A905800D91DF5 /* PokeAPI-Lib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5319F48F290A905800D91DF5 /* XCRemoteSwiftPackageReference "pokeapi-lib" */;
+			productName = "PokeAPI-Lib";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5319F458290A67ED00D91DF5 /* Project object */;
 }
